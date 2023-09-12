@@ -1,0 +1,28 @@
+/* Styles for the logo image */
+.logo {
+    width: 350px; /* Adjust the width as needed */
+    height: 90px; /* Adjust the height as needed */
+    margin-right: 10px; /* Add some spacing between the logo and text */
+  }
+  .left-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px; /* Adjust the width as needed */
+    background-color: #343a40; /* Adjust the background color */
+    z-index: 1000; /* Ensure it's above other content */
+    padding: 20px; /* Add padding for better readability */
+  }
+  
+  .logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    margin-left: 250px; /* Ensure main content doesn't overlap the sidebar */
+    padding: 20px; /* Add padding for better readability */
+  }
+  

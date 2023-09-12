@@ -1,0 +1,61 @@
+<div class="py-5">
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+      <span class="anchor" id="formRegister"></span>
+
+      <!-- form card registration -->
+      <div class="card rounded-0">
+        <div class="card-header">
+          <h3 class="mb-0">Register</h3>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="registerForm" (ngSubmit)="registerUser()">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control rounded-0" formControlName="email" required>
+            </div>
+            <div class="form-group">
+              <label>Password</label>
+              <input type="password" class="form-control rounded-0" formControlName="password" required>
+            </div>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" formControlName="name">
+            </div>
+            <div class="form-group">
+              <label for="surname">Surname</label>
+              <input type="text" class="form-control" id="surname" formControlName="surname">
+            </div>
+            <div class="form-group">
+              <label for="mobileNumber">Mobile Number</label>
+              <input type="text" class="form-control" id="mobileNumber" formControlName="mobileNumber">
+            </div>
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input type="text" class="form-control" id="address" formControlName="address">
+            </div>
+            <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" class="form-control" id="city" formControlName="city">
+            </div>
+            <div class="form-group">
+              <label for="birthdate">Birthdate</label>
+              <input type="date" class="form-control" id="birthdate" formControlName="birthdate">
+              <div *ngIf="registerForm.get('birthdate')?.hasError('invalidDate')" class="text-danger">
+                Invalid date. Please enter a valid birthdate.
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="role">Role</label>
+              <input type="text" class="form-control" id="role" formControlName="role">
+            </div>
+            
+            <button type="submit" class="btn btn-primary float-right">Register</button>
+          </form>
+        </div>
+        <!--/card-block-->
+      </div>
+      <!-- /form card registration -->
+    </div>
+  </div>
+</div>
