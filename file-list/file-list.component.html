@@ -1,0 +1,10 @@
+<div class="container mt-5">
+  <h2>Uploaded Files</h2>
+  <ul class="list-group file-list">
+    <li *ngFor="let file of files" class="list-group-item file-item">
+      <img src="assets/PDF_file_icon.svg.png" class="file-icon mr-2" alt="Custom File Icon">
+      <a [href]="'http://localhost:3000/api/uploads/' + file" target="_blank">{{ file }}</a>
+    </li>
+  </ul>
+</div>
+

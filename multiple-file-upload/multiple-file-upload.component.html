@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple File Upload</title>
+  <link rel="stylesheet" href="multiple-file-upload.component.css"> <!-- Include your CSS file here -->
+</head>
+<body>
+  <div class="container">
+    <h2>Multiple File Upload</h2>
+
+    <input type="file" class="file-input" multiple (change)="onChange($event)" />
+
+    <div *ngIf="files.length" class="file-section">
+      <section *ngFor="let file of files" class="file-details">
+        <h3>File details:</h3>
+        <ul>
+          <li><strong>Name:</strong> {{file.name}}</li>
+          <li><strong>Type:</strong> {{file.type}}</li>
+          <li><strong>Size:</strong> {{file.size}} bytes</li>
+        </ul>
+      </section>
+
+      <button (click)="onUpload()" class="upload-button">Upload the file</button>
+
+      <section [ngSwitch]="status" class="status-section">
+        <p *ngSwitchCase="'uploading'">⏳ Uploading...</p>
+        <p *ngSwitchCase="'success'">✅ Done!</p>
+        <p *ngSwitchCase="'fail'">❌ Error!</p>
+        <p *ngSwitchDefault>😶 Waiting to upload...</p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

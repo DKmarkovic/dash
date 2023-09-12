@@ -1,0 +1,34 @@
+/* Style for the file list container */
+.file-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Style for each file item */
+.file-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Style for the file icon */
+.file-item i {
+  margin-right: 10px; /* Add some spacing between icon and file name */
+}
+
+/* Style for the file name link */
+.file-item a {
+  text-decoration: none;
+  color: #333; /* Change the file name color to your preference */
+}
+
+/* Hover effect for the file name link */
+.file-item a:hover {
+  text-decoration: underline;
+}
+.file-icon {
+  width: 24px; /* Adjust the width and height as needed */
+  height: 28px;
+  vertical-align: middle; /* Align the icon vertically with the text */
+  margin-right: 8px; /* Adjust the margin as needed */
+}

@@ -1,0 +1,44 @@
+/* Add this CSS to your stylesheet */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .file-input {
+    margin-bottom: 10px;
+  }
+  
+  .file-info {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  .upload-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .upload-button:hover {
+    background-color: #0056b3;
+  }
+  
+  section p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  /* You can adjust these styles to match your design preferences */
+  
